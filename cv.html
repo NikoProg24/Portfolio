@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar container -->
+    <div id="navbar-container"></div>
+
+    <!-- Sidans innehåll -->
+    <main>
+        <h1>Välkommen till mitt CV</h1>
+        <p>Vill du veta mer om mina erfarenheter och utbildning? Ladda ned mitt CV här:</p>
+       <!-- Knappen för att visa/dölja CV -->
+        <button id="toggle-cv-button" onclick="toggleCV()">Visa CV</button>
+
+<!-- Div för att visa CV (initialt gömd) -->
+       <div id="cv-container" class="hidden">
+         <embed src="files/NikolettaNorrby_CV.pdf" type="application/pdf" width="100%" height="600px">
+        </div>
+
+        </a>
+        <a href="files/NikolettaNorrby_CV.pdf" download>
+            <button class="cv-button">Ladda ned mitt CV</button>
+        </a>        
+    </main>
+    <!-- Footer container -->
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

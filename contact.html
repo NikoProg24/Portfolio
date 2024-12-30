@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="navbar-container"></div>
+    </nav>
+    <main> 
+    <section id="contact">
+        <h2>Kontakta mig</h2>
+        <form id="contactForm">
+            <input 
+                type="text" 
+                name="name" 
+                placeholder="Ditt namn" 
+                pattern="[A-Za-zÅÄÖåäö\s]+" 
+                title="Ange endast bokstäver och mellanslag" 
+                required>
+            
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Din e-post" 
+                title="Ange en giltig e-postadress" 
+                required>
+            
+            <textarea 
+                name="message" 
+                placeholder="Ditt meddelande" 
+                required></textarea>
+            
+            <button type="submit">Skicka</button>
+        </form>
+        
+    </main>
+
+        <div id="footer-container"></div>
+        <script src="script.js"></script>
+</body>
+</html>
